@@ -16,7 +16,7 @@ BG = (50, 50, 50)
 LIGHT_SLATE_BLUE = (146, 144, 255)
 
 animation_list = []
-animation_steps = [1, 3, 1]
+animation_steps = [1, 3, 1, 3]
 action = 0
 last_update = pygame.time.get_ticks()
 animation_cooldown = 250
@@ -58,6 +58,8 @@ while run:
                 action = 1
             if event.key == pygame.K_UP:
                 action = 2
+            if event.key == pygame.K_LEFT:
+                action = 3
 
     pygame.display.update()
 
