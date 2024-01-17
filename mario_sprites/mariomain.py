@@ -1,5 +1,5 @@
 import pygame
-import spritesheet
+import mariospritesheet
 
 pygame.init()
 
@@ -10,7 +10,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Spritesheets')
 
 sprite_sheet_image = pygame.image.load('NES - Super Mario Bros - Mario & Luigi.png').convert_alpha()
-sprite_sheet = spritesheet.SprteSheet(sprite_sheet_image)
+sprite_sheet = mariospritesheet.SprteSheet(sprite_sheet_image)
 
 BG = (50, 50, 50)
 LIGHT_SLATE_BLUE = (146, 144, 255)
