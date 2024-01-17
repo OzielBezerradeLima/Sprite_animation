@@ -13,8 +13,6 @@ class SprteSheet():
             image.blit(self.sheet, (0, 0), (((frame * width) + 2 + (frame * 2)), 8, width, height))
         elif action == 2:
             image.blit(self.sheet, (0, 0), ((frame * width) + 32, 8, width, height))
-        elif action == 3:
-            image.blit(self.sheet, (0, 0), (((frame * width) + 2 + (frame * 2)), 8, width, height))
 
         image = pygame.transform.scale(image, (width * scale, height * scale))
         image.set_colorkey(colour)

@@ -58,8 +58,6 @@ while run:
                 action = 1
             if event.key == pygame.K_UP:
                 action = 2
-            if event.key == pygame.K_LEFT:
-                action = 3
 
     pygame.display.update()
 
